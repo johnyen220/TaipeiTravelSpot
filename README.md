@@ -1,3 +1,2 @@
 # TaipeiTravelSpot
-Example to use Taipei Open Data
-## For Beginner To Learn
+Example to use Taipei Open Data?
