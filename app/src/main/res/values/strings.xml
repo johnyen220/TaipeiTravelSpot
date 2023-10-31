@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">TaipeiTravelSpot</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_abort">Abort</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_select_all">Select All</string>
+    <string name="btn_delete_all">Delete All</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_create">Create</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_submit">Submit</string>
+    <string name="btn_close">Close</string>
+
+    <string name="item_caption_datetime">Date:</string>
+    <string name="item_caption_tracking_number">Tracking Number:</string>
+    <string name="item_caption_rma">Rma:</string>
+    <string name="item_caption_description">Description:</string>
+    <string name="item_caption_status">Status:</string>
+    <string name="item_caption_photo_quantity">Photo Quantity:</string>
+    <string name="item_request">Request:</string>
+    <string name="item_response">Response:</string>
+    <string name="item_date">Date:</string>
+    <string name="item_error_message">Message:</string>
+
+    <string name="input_hint_account">Account</string>
+    <string name="input_hint_password">Password</string>
+    <string name="login_hint1">Please input account</string>
+    <string name="login_hint2">Please input password</string>
+    <string name="login_remenber_acc">Remenber Account</string>
+    <string name="login_remenber_pw">Remenber Password</string>
+    <string name="input_hint_tracking_number">Please scan or type tracking number</string>
+    <string name="input_hint_rma">Please scan or type RMA</string>
+    <string name="input_hint_description">Please scan or type other barcode</string>
+
+    <string name="google_account_status">Google Account Status</string>
+    <string name="google_account_relink">Google Account Relink</string>
+    <string name="link_google_account">Link Google Account</string>
+    <string name="not_logged_in">Not Logged In</string>
+
+    <string name="hint_invalid_username">Invalid username</string>
+    <string name="hint_invalid_password">Invalid password</string>
+    <string name="hint_o_auth_authorized">Google OAuth authorized successfully</string>
+    <string name="hint_unavailable_warehouses">No available warehouses</string>
+    <string name="hint_invalid_tracking_number">Invalid tracking number</string>
+    <string name="hint_invalid_rma_code">Invalid RMA code</string>
+    <string name="hint_please_select_Images">Please Select Images</string>
+    <string name="hint_permission_denied">Permissions not granted by the user</string>
+    <string name="hint_rma_is_existing">RMA is existing</string>
+    <string name="hint_shipment_not_added">Shipments not added</string>
+    <string name="hint_shipment_is_saved">Shipments is saved</string>
+    <string name="hint_drive_not_ready">Please sign in the Google Drive</string>
+    <string name="hint_warehouse_not_ready">Please select the Warehouse</string>
+    <string name="hint_network_is_disconnect">Network is disconnect</string>
+    <string name="hint_login_successfully">Login Successfully</string>
+    <string name="hint_please_select_a_warehouse">Please select a warehouse</string>
+    <!--    Alert Message-->
+    <string name="alert_upload_shipments_completed">Shipment Uploaded Completed</string>
+    <string name="alert_success">Success</string>
+    <string name="alert_error_title">Error</string>
+    <string name="alert_warning_title">Warning</string>
+    <string name="alert_waiting_images_uploaded_finished">Waiting images uploaded finished, do not change warehouse</string>
+    <string name="alert_waiting_images_uploaded_finished_setting_change_not_allow">Waiting images uploaded finished, and setting changes is not allowed</string>
+    <string name="alert_unable_complete">Unable complete upload shipment, network is unconnected</string>
+    <string name="frag_label_upload">Upload</string>
+    <string name="frag_label_queueing">Queueing</string>
+    <string name="frag_label_upload_status">Upload Status</string>
+    <string name="version">Version</string>
+    <string name="Warehouse_for_logo">Warehouse</string>
+    <!--    Drawer Menu Item-->
+    <string name="upload_shipment">Upload Shipment</string>
+    <string name="upload_image_status">Upload Image Status</string>
+    <string name="error_message">Error Message</string>
+    <string name="upload_image">Upload Image</string>
+    <!--    setting-->
+    <string name="logout">Logout</string>
+    <!-- For drawer option -->
+    <string name="menu_header_Settings">Settings</string>
+    <string name="menu_warehouse">Warehouse Setting</string>
+    <string name="menu_google_sign_in">Google Drive Setting</string>
+    <string name="menu_finish">Finish</string>
+    <string name="menu_status">Status</string>
+    <string name="menu_queueing">Photo Queueing</string>
+    <string name="menu_upload_list">Upload Status List</string>
+    <string name="menu_title_return_helper_service">Return Helper Service()</string>
+    <string name="album_check">Selected</string>
+    <string name="album_title">Media Album</string>
+    <string name="max_uplload_shipment">Maximum Upload Shipment 300 Items</string>
+
+    <string name="title_batch_shipment_deletion">Are you sure to delete all records ?</string>
+    <string name="title_warehouse_picker">Please select a warehouse</string>
+    <string name="title_permission_failed">Permission denied</string>
+    <string name="hint_permission_camera_failed">No camera permission, please authorize before use.</string>
+    <string name="hint_permission_storage_failed">No storage permission, please authorize before use.</string>
+    <string name="hint_permission_network_state">No network state permission, please authorize before use.</string>
+    <string name="hint_images_are_saved">Images are Saved</string>
+    <string name="hint_please_select_imgage">Please Select Image</string>
+    <!-- Strings for camera settings. -->
+    <string name="pref_key_rear_camera_preview_size" translatable="false">rcpvs</string>
+    <string name="pref_key_rear_camera_picture_size" translatable="false">rcpts</string>
+
+    <string name="prompt_point_at_a_barcode">Point your camera at a barcode</string>
+    <string name="prompt_move_camera_closer">Move closer to search</string>
+    <string name="prompt_searching">Searching&#8230;</string>
+
+    <!-- Content Description -->
+    <string name="content_description" translatable="false">content description</string>
+    <string name="cd_login_icon" translatable="false">EZReturn icon</string>
+    <string name="cd_upload_or_save_fab" translatable="false">Upload or Save shipment</string>
+    <string name="cd_close_button" translatable="false">Back</string>
+    <string name="cd_flash_button" translatable="false">Toggle camera flash</string>
+    <string name="cd_item_save_add_button" translatable="false">Add save image</string>
+    <string name="cd_item_save_cancel_button" translatable="false">Remove save image</string>
+    <string name="cd_item_save_thumbnail" translatable="false">Save image thumbnail</string>
+    <string name="cd_scan_input_form_button" translatable="false">Launch scanner</string>
+
+    <string name="logo">Logo</string>
+    <!--    Status desctiption-->
+    <string name="sd_file_count">File Count</string>
+    <string name="sd_complete">Complete</string>
+    <string name="sd_estimate_time">Estimate Time</string>
+    <string name="sd_upload_failed">Upload Failed</string>
+    <string name="sd_no_image_wait_for_upload">No Image wait for upload</string>
+    <string name="sd_status">Status</string>
+    <string name="sd_delete_all">Delete All</string>
+    <string name="sd_remains">Remains</string>
+    <string name="sd_pieces">Pieces</string>
+    <!--  Progress -->
+    <string name="progress_uploading_filename" translatable="false">Uploading filename:</string>
+
+    <string name="cd_settings_button">Settings</string>
+    <string name="product_search_button">Search object</string>
+
+    <!-- Strings for barcode detection settings. -->
+    <string name="pref_category_barcode_detection">Barcode detection</string>
+    <string name="pref_key_barcode_reticle_width" translatable="false">barcode_brw</string>
+    <string name="pref_title_barcode_reticle_width">Barcode reticle width</string>
+    <string name="pref_summary_barcode_reticle_width" formatted="false">Relative to the camera view width, ranges from 50% to 95%</string>
+    <string name="pref_key_barcode_reticle_height" translatable="false">barcode_brh</string>
+    <string name="pref_title_barcode_reticle_height">Barcode reticle height</string>
+    <string name="pref_summary_barcode_reticle_height" formatted="false">Relative to the camera view height, ranges from 20% to 80%</string>
+    <string name="pref_key_enable_barcode_size_check" translatable="false">barcode_ebsc</string>
+    <string name="pref_title_enable_barcode_size_check">Enable barcode size check</string>
+    <string name="pref_summary_enable_barcode_size_check">Will prompt user to move camera closer if the detected barcode is too small</string>
+    <string name="pref_key_minimum_barcode_width" translatable="false">barcode_mbw</string>
+    <string name="pref_title_minimum_barcode_width">Minimum barcode width</string>
+    <string name="pref_summary_minimum_barcode_width" formatted="false">Relative to the reticle width, ranges from 20% to 80% (only applicable when barcode size check enabled)</string>
+    <string name="pref_key_delay_loading_barcode_result" translatable="false">barcode_dlbr</string>
+    <string name="pref_title_delay_loading_barcode_result">Delay loading barcode result</string>
+    <string name="pref_summary_delay_loading_barcode_result">Will show the loading spinner for 2s</string>
+
+
+    <string name="pref_title_rear_camera_preview_size">Rear camera preview size</string>
+    <string name="pref_category_camera">Camera</string>
+    <string name="pref_category_product_search">Product search</string>
+    <string name="pref_title_enable_auto_search">Enable auto search</string>
+    <string name="pref_summary_confirmation_time_in_manual_search">Ranges from 100ms to 1000ms</string>
+
+
+    <string name="pref_title_object_detector_enable_multiple_objects">Enable multiple objects</string>
+    <string name="pref_title_object_detector_enable_classification">Enable classification</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>

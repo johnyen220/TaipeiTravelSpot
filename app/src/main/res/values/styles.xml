@@ -1,0 +1,62 @@
+<resources>
+
+    <style name="App" />
+
+    <style name="App.Theme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="App.Theme.Splash" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:colorPrimaryDark">@color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="App.Theme.Activity" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="App.Theme.Activity.Transparent">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="App.Theme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="App.Theme.Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionMenuTextColor">@color/fontLight</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="App.Theme.Toolbar.Popup" parent="ThemeOverlay.AppCompat.Light">
+        <item name="actionMenuTextColor">@color/fontDark</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="App.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/toolbarHeight</item>
+        <item name="android:theme">@style/App.Theme.Toolbar</item>
+        <item name="popupTheme">@style/App.Theme.Toolbar.Popup</item>
+        <item name="titleTextColor">@color/toolbarTextLight</item>
+        <item name="subtitleTextColor">@color/toolbarTextLight</item>
+    </style>
+    <style name="Widget.App.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/uploadCheckBoxTint</item>
+    </style>
+
+</resources>

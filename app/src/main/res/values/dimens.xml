@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Toolbar -->
+    <dimen name="toolbarHeight">56dp</dimen>
+    <!--  Progress Indicator  -->
+    <dimen name="progressIndicatorSize">60dp</dimen>
+    <dimen name="progressIndicatorElevation">5dp</dimen>
+</resources>
