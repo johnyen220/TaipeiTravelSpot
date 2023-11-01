@@ -4,14 +4,5 @@
     tools:showIn="navigation_view">
     <item
         android:id="@+id/nav_upload"
-        android:title="@string/upload_shipment" />
-    <item
-        android:id="@+id/nav_upload_status"
-        android:title="@string/upload_image_status" />
-    <item
-        android:id="@+id/nav_upload_image"
-        android:title="@string/upload_image" />
-    <item
-        android:id="@+id/nav_error"
-        android:title="@string/error_message" />
+        android:title="@string/zh_tw" />
 </menu>
