@@ -9,6 +9,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
+import androidx.fragment.app.activityViewModels
 import com.johnyen.taipeitravelspot.api.portal.response.model.Data
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -20,6 +21,7 @@ import com.johnyen.taipeitravelspot.ui.BaseFragment
 class WebViewFragment : BaseFragment(){
     private var _binding: FragmentWebviewBinding? = null
     private val binding get() = _binding!!
+    private val taipeiOpenDataViewModel: TaipeiOpenDataViewModel by activityViewModels()
     private var title : String = ""
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -58,6 +60,7 @@ class WebViewFragment : BaseFragment(){
         val toolbarArrowBack = requireActivity().findViewById<TextView>(R.id.toolbar_arrow_back)
         toolbarArrowBack.visibility = View.VISIBLE
         toolbarArrowBack.setOnClickListener { parentFragmentManager.popBackStack() }
+        taipeiOpenDataViewModel.lockRightDrawerLiveData.postValue(true)
     }
 
     private fun setupOnBackPressOn(){

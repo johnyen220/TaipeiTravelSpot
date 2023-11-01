@@ -14,13 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaipeiTravelSpot"
         tools:targetApi="31">
-        <activity
-            android:name=".ui.MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.TaipeiTravelSpot.NoActionBar">
 
-        </activity>
         <activity android:name=".ui.taipeiOpenData.TaipeiTravelSpotListActivity"
             android:exported="true"
             android:label="@string/app_name"
@@ -30,6 +24,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ui.SecondActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.TaipeiTravelSpot.NoActionBar">
         </activity>
     </application>
     <uses-feature

@@ -15,6 +15,8 @@ class TaipeiOpenDataViewModel @Inject constructor(
     val fetchTaipeiOpenDataResult = MutableLiveData<TaipeiDataResponse>()
     val fetchWebViewUrlResult = MutableLiveData<String>()
     val fetchTaipeiSpotDetailResult = MutableLiveData<Data>()
+    val lockRightDrawerLiveData = MutableLiveData<Boolean>()
+    val openDrawerLiveData = MutableLiveData<Boolean>()
     suspend fun fetchAttractionAll() {
         val taipeiOpenData = portalRepository.fetchTaiPeiOpenData()
         fetchTaipeiOpenDataResult.postValue(taipeiOpenData)

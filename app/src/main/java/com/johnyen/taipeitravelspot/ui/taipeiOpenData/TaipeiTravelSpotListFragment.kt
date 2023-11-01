@@ -32,6 +32,7 @@ class TaipeiTravelSpotListFragment : BaseFragment(), TaipeiSpotAdapter.Callback 
         toolBarTitle.text=""
         val toolbarArrowBack = requireActivity().findViewById<TextView>(R.id.toolbar_arrow_back)
         toolbarArrowBack.visibility = View.GONE
+        taipeiOpenDataViewModel.lockRightDrawerLiveData.postValue(false)
     }
     private fun initLiveData() {
         taipeiOpenDataViewModel.fetchTaipeiOpenDataResult.observe(viewLifecycleOwner){

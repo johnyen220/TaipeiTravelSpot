@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import com.johnyen.taipeitravelspot.api.portal.response.model.Data
 import com.cbes.ezreturn.utils.loadInternalImage
 import com.google.gson.Gson
@@ -19,6 +20,7 @@ import com.johnyen.taipeitravelspot.ui.BaseFragment
 class TaipeiSpotDetailFragment : BaseFragment(){
     private var _binding: FragmentTaipeiSpotDetailBinding? = null
     private val binding get() = _binding!!
+    private val taipeiOpenDataViewModel: TaipeiOpenDataViewModel by activityViewModels()
     private var title : String = ""
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,6 +62,7 @@ class TaipeiSpotDetailFragment : BaseFragment(){
         val toolbarArrowBack = requireActivity().findViewById<TextView>(R.id.toolbar_arrow_back)
         toolbarArrowBack.visibility = View.VISIBLE
         toolbarArrowBack.setOnClickListener { parentFragmentManager.popBackStack() }
+        taipeiOpenDataViewModel.lockRightDrawerLiveData.postValue(true)
     }
     private fun goToWebViewFragment(dataGson:String){
         val f: Fragment = WebViewFragment()

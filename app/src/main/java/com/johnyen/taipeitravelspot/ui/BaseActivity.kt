@@ -8,6 +8,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.viewbinding.ViewBinding
 import com.cbes.ezreturn.utils.Logger
 import com.johnyen.taipeitravelspot.utils.SystemUi
