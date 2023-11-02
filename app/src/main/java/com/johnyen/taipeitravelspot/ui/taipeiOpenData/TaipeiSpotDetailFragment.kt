@@ -26,7 +26,7 @@ class TaipeiSpotDetailFragment : BaseFragment(){
     private val binding get() = _binding!!
     private val taipeiOpenDataViewModel: TaipeiOpenDataViewModel by activityViewModels()
     private var title : String = ""
-    private lateinit var itemList: MutableList<String>
+    private var itemList: MutableList<String> = mutableListOf()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -42,7 +42,6 @@ class TaipeiSpotDetailFragment : BaseFragment(){
                     var src :String? = ""
                     if(data.images?.size!! >0) {
                         src = data.images[0].src
-                        itemList = mutableListOf()
                         data.images.forEach {
                             it.src?.let { it1 -> itemList.add(it1) }
                         }
@@ -74,7 +73,7 @@ class TaipeiSpotDetailFragment : BaseFragment(){
         taipeiOpenDataViewModel.lockRightDrawerLiveData.postValue(true)
         binding.gridRecyclerview.layoutManager =
             GridLayoutManager(requireContext(),3, LinearLayoutManager.VERTICAL, false)
-        if(itemList.size>0) {
+        if(itemList!=null && itemList.size>0) {
             binding.gridRecyclerview.adapter = TravelSpotPhotoGridAdapter(itemList)
         }
     }

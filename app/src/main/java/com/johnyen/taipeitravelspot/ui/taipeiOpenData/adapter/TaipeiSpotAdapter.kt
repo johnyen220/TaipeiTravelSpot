@@ -37,7 +37,7 @@ class TaipeiSpotAdapter (
 
     class TaipeiSpotViewHolder(
         val view: View,
-        val callback: Callback
+        private val callback: Callback
     ) : RecyclerView.ViewHolder(view) {
         private val title: TextView = view.findViewById(R.id.title)
         private val contentText: TextView = view.findViewById(R.id.content_text)
@@ -46,6 +46,7 @@ class TaipeiSpotAdapter (
         fun bind(data: Data) {
             title.text = data.name
             contentText.text = data.introduction
+            images.loadInternalImage("")
             if(data.images?.isNotEmpty() == true){
                 images.loadInternalImage(data.images[0].src)
             }
