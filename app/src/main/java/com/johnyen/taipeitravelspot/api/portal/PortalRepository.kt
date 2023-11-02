@@ -1,6 +1,6 @@
 package com.johnyen.taipeitravelspot.api.portal
 
-import com.cbes.ezreturn.di.IoDispatcher
+import com.johnyen.taipeitravelspot.di.IoDispatcher
 import com.johnyen.taipeitravelspot.api.portal.response.TaipeiDataResponse
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
@@ -18,7 +18,7 @@ class PortalRepository @Inject constructor(
         }
     }
 
-    suspend fun fetchTaiPeiOpenData(): TaipeiDataResponse {
-        return taipeiOpenDataService.getAttractionAll()
+    suspend fun fetchTaiPeiOpenData(lang:String): TaipeiDataResponse {
+        return taipeiOpenDataService.getAttractionAll(lang)
     }
 }

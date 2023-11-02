@@ -7,13 +7,14 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 import java.util.concurrent.TimeUnit
 
 
 interface TaipeiOpenDataService {
-    @GET("zh-tw/Attractions/All")
-    suspend fun getAttractionAll(
+    @GET("{lang}/Attractions/All")
+    suspend fun getAttractionAll(@Path("lang")lang:String
     ): TaipeiDataResponse
 
     companion object {

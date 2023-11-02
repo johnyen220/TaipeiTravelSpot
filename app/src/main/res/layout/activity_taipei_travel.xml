@@ -27,6 +27,7 @@
         <include layout="@layout/progressbar" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="right"

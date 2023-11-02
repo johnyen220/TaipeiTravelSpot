@@ -1,4 +1,4 @@
-package com.cbes.ezreturn.di
+package com.johnyen.taipeitravelspot.di
 
 import dagger.Module
 import dagger.Provides

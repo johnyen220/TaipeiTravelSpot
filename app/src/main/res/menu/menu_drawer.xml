@@ -3,6 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
     <item
-        android:id="@+id/nav_upload"
+        android:id="@+id/zh_tw"
         android:title="@string/zh_tw" />
+    <item
+        android:id="@+id/zh_cn"
+        android:title="@string/zh_cn" />
+    <item
+        android:id="@+id/en"
+        android:title="@string/en" />
+    <item
+        android:id="@+id/ja"
+        android:title="@string/ja" />
+    <item
+        android:id="@+id/ko"
+        android:title="@string/ko" />
+    <item
+        android:id="@+id/es"
+        android:title="@string/es" />
+    <item
+        android:id="@+id/th"
+        android:title="@string/th" />
+    <item
+        android:id="@+id/vi"
+        android:title="@string/vi" />
+
 </menu>

@@ -8,6 +8,8 @@ import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.johnyen.taipeitravelspot.api.portal.response.model.Data
 import com.cbes.ezreturn.utils.loadInternalImage
 import com.google.gson.Gson
@@ -15,6 +17,8 @@ import com.google.gson.reflect.TypeToken
 import com.johnyen.taipeitravelspot.R
 import com.johnyen.taipeitravelspot.databinding.FragmentTaipeiSpotDetailBinding
 import com.johnyen.taipeitravelspot.ui.BaseFragment
+import com.johnyen.taipeitravelspot.ui.taipeiOpenData.adapter.TravelSpotPhotoGridAdapter
+import com.johnyen.taipeitravelspot.ui.taipeiOpenData.viewModel.TaipeiOpenDataViewModel
 
 
 class TaipeiSpotDetailFragment : BaseFragment(){
@@ -22,6 +26,7 @@ class TaipeiSpotDetailFragment : BaseFragment(){
     private val binding get() = _binding!!
     private val taipeiOpenDataViewModel: TaipeiOpenDataViewModel by activityViewModels()
     private var title : String = ""
+    private lateinit var itemList: MutableList<String>
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -37,6 +42,10 @@ class TaipeiSpotDetailFragment : BaseFragment(){
                     var src :String? = ""
                     if(data.images?.size!! >0) {
                         src = data.images[0].src
+                        itemList = mutableListOf()
+                        data.images.forEach {
+                            it.src?.let { it1 -> itemList.add(it1) }
+                        }
                     }
                     binding.link.text = url
                     binding.link.setOnClickListener {
@@ -63,6 +72,11 @@ class TaipeiSpotDetailFragment : BaseFragment(){
         toolbarArrowBack.visibility = View.VISIBLE
         toolbarArrowBack.setOnClickListener { parentFragmentManager.popBackStack() }
         taipeiOpenDataViewModel.lockRightDrawerLiveData.postValue(true)
+        binding.gridRecyclerview.layoutManager =
+            GridLayoutManager(requireContext(),3, LinearLayoutManager.VERTICAL, false)
+        if(itemList.size>0) {
+            binding.gridRecyclerview.adapter = TravelSpotPhotoGridAdapter(itemList)
+        }
     }
     private fun goToWebViewFragment(dataGson:String){
         val f: Fragment = WebViewFragment()

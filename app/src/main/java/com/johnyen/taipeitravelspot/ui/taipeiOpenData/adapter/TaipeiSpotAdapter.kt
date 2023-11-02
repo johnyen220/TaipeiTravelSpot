@@ -1,4 +1,4 @@
-package com.johnyen.taipeitravelspot.ui.taipeiOpenData
+package com.johnyen.taipeitravelspot.ui.taipeiOpenData.adapter
 
 import android.view.LayoutInflater
 import android.view.View

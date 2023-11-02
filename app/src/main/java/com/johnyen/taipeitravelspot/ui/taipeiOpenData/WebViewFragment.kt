@@ -16,6 +16,7 @@ import com.google.gson.reflect.TypeToken
 import com.johnyen.taipeitravelspot.R
 import com.johnyen.taipeitravelspot.databinding.FragmentWebviewBinding
 import com.johnyen.taipeitravelspot.ui.BaseFragment
+import com.johnyen.taipeitravelspot.ui.taipeiOpenData.viewModel.TaipeiOpenDataViewModel
 
 
 class WebViewFragment : BaseFragment(){
