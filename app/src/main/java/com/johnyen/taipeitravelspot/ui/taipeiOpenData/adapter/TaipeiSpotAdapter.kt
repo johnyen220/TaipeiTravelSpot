@@ -13,7 +13,7 @@ import com.johnyen.taipeitravelspot.R
 
 
 class TaipeiSpotAdapter (
-    private var tapeiSpotData: List<Data>,
+    private var taipeiSpotData: List<Data>,
     private val callback: Callback
 ): RecyclerView.Adapter<RecyclerView.ViewHolder>()  {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
@@ -25,14 +25,14 @@ class TaipeiSpotAdapter (
         when (holder) {
             is TaipeiSpotViewHolder -> {
                 holder.bind(
-                    tapeiSpotData[position]
+                    taipeiSpotData[position]
                 )
             }
         }
     }
 
     override fun getItemCount(): Int {
-        return tapeiSpotData.size
+        return taipeiSpotData.size
     }
 
     class TaipeiSpotViewHolder(
