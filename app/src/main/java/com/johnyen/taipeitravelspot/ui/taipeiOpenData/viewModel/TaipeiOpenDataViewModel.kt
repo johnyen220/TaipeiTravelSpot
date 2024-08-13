@@ -1,13 +1,14 @@
 package com.johnyen.taipeitravelspot.ui.taipeiOpenData.viewModel
 
 
+import android.annotation.SuppressLint
 import android.widget.ImageView
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.MutableLiveData
 import com.johnyen.taipeitravelspot.api.portal.PortalRepository
 import com.johnyen.taipeitravelspot.api.portal.response.TaipeiDataResponse
 import com.johnyen.taipeitravelspot.api.portal.response.model.Data
-import com.johnyen.taipeitravelspot.ui.taipeiOpenData.BaseViewModel
+import com.johnyen.taipeitravelspot.ui.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -15,7 +16,9 @@ import javax.inject.Inject
 class TaipeiOpenDataViewModel @Inject constructor(
     private val portalRepository: PortalRepository,
 ) : BaseViewModel() {
+    @SuppressLint("StaticFieldLeak")
     var myDrawerLayout:DrawerLayout? = null
+    @SuppressLint("StaticFieldLeak")
     var changeLanguageImage:ImageView? = null
     val fetchTaipeiOpenDataResult = MutableLiveData<TaipeiDataResponse>()
     val fetchWebViewUrlResult = MutableLiveData<String>()

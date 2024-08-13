@@ -1,4 +1,4 @@
-package com.johnyen.taipeitravelspot.ui.taipeiOpenData
+package com.johnyen.taipeitravelspot.ui
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -9,7 +9,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
 abstract class BaseViewModel : ViewModel() {
-    val error = MutableLiveData<Exception>()
+    private val error = MutableLiveData<Exception>()
     val indicator = MutableLiveData<Boolean>()
 
     protected fun <T> request(execute: suspend CoroutineScope.() -> T) {
